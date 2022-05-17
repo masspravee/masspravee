@@ -16,7 +16,7 @@ function sendof(){
        detail[1]=msg.value
        socket.emit('chat',detail)
         msg.value=''
-        typing('online')
+        
       
       
     }
@@ -56,6 +56,7 @@ function render(uname,data){
             <span>${times()}</span></div></div>`
             chatbox.appendChild(sec)
            chatbox.scrollTop=chatbox.scrollHeight -chatbox.clientHeight
+           typing('online')
           
       
         }
