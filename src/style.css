@@ -131,6 +131,7 @@ display: flex;
 flex-direction: column;
 height: 90vh;
 background: #f1f0e8;
+position: fixed;
 width:100% ;
 }
 .chat-header {
