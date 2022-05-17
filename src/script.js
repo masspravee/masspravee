@@ -106,7 +106,7 @@ function typing(stat){
    
     
       setInterval(()=>{
-        typing('online')
+        socket.emit('typing','online')
       },4000)
       
   
