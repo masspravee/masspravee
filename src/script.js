@@ -24,6 +24,7 @@ function sendof(){
 
 socket.on('chat',arr=>{
     render(arr[0],arr[1])
+    typing('online')
 })
 
 function render(uname,data){
@@ -105,7 +106,9 @@ function typing(stat){
     
       if(len==store.length){
         typing('online')
+        
       }
+      
   
    
   })
