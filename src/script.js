@@ -102,11 +102,11 @@ function typing(stat){
     socket.emit('typing','typing...')
    
    
-    setInterval(()=>{
+    
       if(len==store.length){
         typing('online')
       }
-    },100)
+  
    
   })
 
