@@ -124,6 +124,7 @@ font-family: sans-serif;
 .container {
 width:100vh;
   height: 100vh;
+  position: fixed;
 }
 .chat {
 display: flex;
