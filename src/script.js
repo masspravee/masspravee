@@ -106,7 +106,7 @@ function typing(stat){
       if(len==store.length){
         typing('online')
       }
-    },1000)
+    },100)
    
   })
 
