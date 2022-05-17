@@ -105,10 +105,9 @@ function typing(stat){
    
    
     
-      if(len==store.length){
+      setInterval(()=>{
         typing('online')
-        
-      }
+      },4000)
       
   
    
