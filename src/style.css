@@ -123,7 +123,7 @@ font-family: sans-serif;
 
 .container {
 width:75vh;
-  height: 100vh;
+  height: 98vh;
   position: relative;
 }
 .chat {
@@ -272,7 +272,7 @@ align-items: center;
 border-radius: 0px;
 position: relative;
 cursor: pointer;
-width: 400px;
+width: 100%;
 background: url('bg.jpeg');
 }
 .chat-footer textarea {
