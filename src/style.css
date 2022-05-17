@@ -122,7 +122,7 @@ font-family: sans-serif;
 }
 
 .container {
-width:95%;
+width:100vh;
   height: 100vh;
 }
 .chat {
