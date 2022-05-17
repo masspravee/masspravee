@@ -129,7 +129,7 @@ width:75vh;
 .chat {
 display: flex;
 flex-direction: column;
-height: 95vh;
+height: 90%;
 background: #f1f0e8;
 width:100% ;
 }
