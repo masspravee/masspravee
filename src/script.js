@@ -96,7 +96,7 @@ function typing(stat){
   }
 
 
-  document.getElementById('ins').addEventListener('keypress',(e)=>{
+  document.getElementById('ins').addEventListener('input',(e)=>{
    // console.log(e)
     store.push(e)
      len=store.length
