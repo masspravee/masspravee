@@ -3,7 +3,10 @@ var socket=io()
 const chatbox=document.getElementById('chat-box')
 const name=prompt("Enter Your Name:")
 
-socket.emit('name',name)
+
+
+
+socket.emit('user',name)
 document.getElementById('sub').addEventListener('click',sendof)
 
 function sendof(){
@@ -15,12 +18,15 @@ function sendof(){
        detail[0]=name
        detail[1]=msg.value
        socket.emit('chat',detail)
-        msg.value=''
-        
-      
-      
+        msg.value=''     
     }
 }
+socket.on('user',(val)=>{
+  var up=document.createElement('div')
+  up.classList.add('date')
+  up.innerHTML=`<h3 class="update">${val} connected</h3>`
+  chatbox.appendChild(up)
+})
 
 socket.on('chat',arr=>{
     render(arr[0],arr[1])
@@ -101,13 +107,13 @@ function typing(stat){
     store.push(e)
      len=store.length
    // console.log(len)
-    socket.emit('typing','typing...')
+    socket.emit('typing',`${name} typing..`)
    
    
     
       setInterval(()=>{
         socket.emit('typing','online')
-      },4000)
+      },2000)
       
   
    

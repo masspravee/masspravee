@@ -26,6 +26,9 @@ io.on('connection',(socket)=>{
     socket.on('typing',(e)=>{
         socket.broadcast.emit('typing',e)
     })
+    socket.on('user',(s)=>{
+        socket.broadcast.emit('user',s)
+    })
 })
 
 server.listen(port)
