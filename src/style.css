@@ -125,6 +125,7 @@ font-family: sans-serif;
 .container {
 width:75vh;
   height: 100vh;
+  position: relative;
   
 }
 .chat {
