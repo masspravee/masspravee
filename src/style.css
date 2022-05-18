@@ -329,18 +329,4 @@ top: 10px;
   margin-left: 5px;
 }
 
-.date{
-  display: flex;
-background-color: rgb(192, 188, 188);
-width: 93%;
-border-radius: 50%;
-margin: 0.5rem;
-}
-.update{
-  flex: 1;
-  text-align: center;
-  justify-content: center;
 
-  font-size: 15px;
- 
-}
