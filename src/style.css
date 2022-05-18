@@ -125,12 +125,12 @@ font-family: sans-serif;
 .container {
 width:75vh;
   height: 100vh;
-  position: fixed;
+  
 }
 .chat {
 display: flex;
 flex-direction: column;
-height: 90vh;
+height: 85vh;
 background: #f1f0e8;
 
 width:100% ;
