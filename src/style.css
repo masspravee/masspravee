@@ -124,7 +124,7 @@ font-family: sans-serif;
 
 .container {
 width:75vh;
-  height: 100vh;
+  height: 100%;
   position: relative;
   
 }
