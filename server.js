@@ -18,9 +18,9 @@ app.get('/',(req,res)=>{
 })
 
 const database=mysql.createConnection({
-    host: '192.168.43.101',
-    user: 'massedits',
-    password: '12345678',
+    host: 'localhost',
+    user: 'root',
+    password: '',
     database:'mass'
 
 })
