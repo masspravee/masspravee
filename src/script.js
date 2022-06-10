@@ -13,10 +13,12 @@ function sendof(){
     var msg=document.getElementById('ins')
     if(msg.value){
       
-        render('my',msg.value)
+       
        detail=Array()
        detail[0]=name
        detail[1]=msg.value
+       detail[2]=times()
+       render('my',msg.value,detail[2])
        socket.emit('chat',detail)
         msg.value=''     
     }
@@ -29,11 +31,11 @@ socket.on('user',(val)=>{
 })
 
 socket.on('chat',arr=>{
-    render(arr[0],arr[1])
+    render(arr[0],arr[1],arr[2])
     typing('online')
 })
 
-function render(uname,data){
+function render(uname,data,textTime){
     if(uname=='my'){
      
         
@@ -44,7 +46,7 @@ function render(uname,data){
         
         <div class="mess mess-r">
            <p>${data}</p>
-           <span>${times()}</span>
+           <span>${textTime}</span>
         </div>
         </div>`
         chatbox.appendChild(fir)
@@ -59,7 +61,7 @@ function render(uname,data){
         <div class="mess">
         <span class="user">${uname}</span>
             <p>${data}</p>
-            <span>${times()}</span></div></div>`
+            <span>${textTime}</span></div></div>`
             chatbox.appendChild(sec)
            chatbox.scrollTop=chatbox.scrollHeight -chatbox.clientHeight
            typing('online')
@@ -77,8 +79,7 @@ function times(){
 	var mass=new Date()
 	var hour=mass.getHours()
 	var mint=mass.getMinutes()
-//	console.log (hour,'.',mint)
-	if(hour<=12){
+	if(hour<12){
     if(mint<10){
       return (`${hour}:0${mint} AM`)
     }else{
@@ -89,7 +90,7 @@ function times(){
     if(mint<10){
       return (`${hour-12}:0${mint} PM`)
     }else{
-		return (`${hour-12}:${mint} AM`)
+		return (`${hour-12}:${mint} PM`)
 	}	}
 	
 }
