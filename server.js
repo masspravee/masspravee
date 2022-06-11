@@ -17,13 +17,7 @@ app.get('/',(req,res)=>{
 
 })
 
-const database=mysql.createConnection({
-    host: '192.168.43.101',
-    user: 'massedits',
-    password: '12345678',
-    database:'mass'
-
-})
+const database=mysql.createConnection({ host: '192.168.43.101:8888',user: 'massedits',password: '12345678',database:'mass'})
 
 io.on('connection',(socket)=>{
     console.log('connected')
