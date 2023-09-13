@@ -1,4 +1,4 @@
-- 👋 Hi, I’m @masspravee
+- 👋 Hi, I’m @light yagami
 - 👀 I’m interested in webdesign and programming
 - 🌱 I’m currently learning C
 - 💞️ I’m looking to collaborate on Social media by a Social Media site
