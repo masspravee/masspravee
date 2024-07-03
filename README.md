@@ -2,7 +2,7 @@
 - 👀 I’m interested in webdesign and programming
 - 🌱 I’m currently learning C
 - 💞️ I’m looking to collaborate on Social media by a Social Media site
-- 📫 this is my mail-balathan2vijay004@gmail.com
+- 📫 this is my mail-balathan2vijay004@gmail.com, balasubramaniamt17@gmail.com
 - In Nov 19, 2021
 
 - In Sep 2023
